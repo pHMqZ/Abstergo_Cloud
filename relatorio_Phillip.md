@@ -33,9 +33,9 @@ A implementação dessas ferramentas terá como resultado imediato a redução d
 
 ## Anexos
 
-- [Documentação EC2] (https://docs.aws.amazon.com/ec2/)
-- [Documentação S3] (https://docs.aws.amazon.com/s3/?icmpid=docs_homepage_featuredsvcs)
-- [Documentação CloudWatch] (https://docs.aws.amazon.com/pt_br/systems-manager-automation-runbooks/latest/userguide/automation-ref-cw.html)
+- [Documentação EC2](https://docs.aws.amazon.com/ec2/)
+- [Documentação S3](https://docs.aws.amazon.com/s3/?icmpid=docs_homepage_featuredsvcs)
+- [Documentação CloudWatch](https://docs.aws.amazon.com/pt_br/systems-manager-automation-runbooks/latest/userguide/automation-ref-cw.html)
 
 Assinatura do Responsável pelo Projeto:
 Phillip Marques
