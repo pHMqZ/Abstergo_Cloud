@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>RELAT&Oacute;RIO DE IMPLEMENTA&Ccedil;&Atilde;O DE SERVI&Ccedil;OS AWS</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="relatório-de-implementação-de-serviços-aws">RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS</h1>
+<p>Data: 17/04/2024
+Empresa: Abstergo Industries
+Responsável: Phillip Marques</p>
+<h2 id="introdução">Introdução</h2>
+<p>Este relatório apresenta o processo de implementação de ferramentas na empresa Abstergo Industries, realizado por Phillip Marques. O objetivo do projeto foi elencar 3 serviços AWS, com a finalidade de realizar diminuição de custos imediatos.</p>
+<h2 id="descrição-do-projeto">Descrição do Projeto</h2>
+<p>O projeto de implementação de ferramentas foi dividido em 3 etapas, cada uma com seus objetivos específicos. A seguir, serão descritas as etapas do projeto:</p>
+<p>Etapa 1:</p>
+<ul>
+<li>Amazon EC2 Auto Scaling</li>
+<li>Escalonamento automático de recursos de computação</li>
+<li>O EC2 será implementado para permitir que a Abstergo atualize automaticamente a capacidade dos recursos de computação utilizados, sendo ajustados de acordo com a demanda. Proporcionando assim, uma redução dos custos de implementação de servidores, garantindo que a empresa pagua apenas pelos recursos de acordo com o uso.</li>
+</ul>
+<p>Etapa 2:</p>
+<ul>
+<li>Amazon S3</li>
+<li>Armazenamento de objetos escalável e durável</li>
+<li>A implementação do S3 permitirá que a Abstergo armazene e consiga acessar seus dados de forma escalável, de acordo com a demanda, e durável. Contribuindo para a redução de custos imediatos, pois não será necessario infraestrutura própria para armazenamdno de grande volume de dados, além de estar garantindo a disponibilidade e durabilidade dos dados.</li>
+</ul>
+<p>Etapa 3:</p>
+<ul>
+<li>Amazon CloudWatch</li>
+<li>Monitoramento e observabilidade</li>
+<li>Com a implementação do CloudWatch será possivel coletar dados de monitoramento de recursos, aplicativos e serviços em tempo real. Podendo assim visualizar gargalos em sua infraestrutura Cloud e atuar em melhorias de forma mais eficaz.</li>
+</ul>
+<h2 id="conclusão">Conclusão</h2>
+<p>A implementação dessas ferramentas terá como resultado imediato a redução de custos de infraestrutura própria e custos operacionais, sendo pago assim apenas pelos recursos que estão sendo utilizados no momento, também podendo realizar escalonamento de recursos para momentos em que a demanda de uso seja maior sem impactar na produtividade da Abstergo.</p>
+<h2 id="anexos">Anexos</h2>
+<ul>
+<li>Documentação EC2 [<a href="https://docs.aws.amazon.com/ec2/">https://docs.aws.amazon.com/ec2/</a>]</li>
+<li>Documentação S3 [<a href="https://docs.aws.amazon.com/s3/?icmpid=docs_homepage_featuredsvcs">https://docs.aws.amazon.com/s3/?icmpid=docs_homepage_featuredsvcs</a>]</li>
+<li>Documentação CloudWatch [<a href="https://docs.aws.amazon.com/pt_br/systems-manager-automation-runbooks/latest/userguide/automation-ref-cw.html">https://docs.aws.amazon.com/pt_br/systems-manager-automation-runbooks/latest/userguide/automation-ref-cw.html</a>]</li>
+</ul>
+<p>Assinatura do Responsável pelo Projeto:
+Phillip Marques</p>
+
+            
+            
+        </body>
+        </html>
